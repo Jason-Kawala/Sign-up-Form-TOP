@@ -1,3 +1,52 @@
-div {
-    color:tomato;
+* {
+    box-sizing: border-box;
+}
+body,html {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template: "a b" 100%;
+}
+
+.left-card {
+    width: 40%;
+    position: relative;
+}
+
+.left-card > img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
+.banner, .left-card > p {
+    text-align: center;
+}
+
+.banner {
+    display: flex;
+    position: absolute;
+    top: 30%;
+    z-index: 1;
+    font-size: 4em;
+    width: 100%;
+    background-color: rgba(55, 85, 99, 0.15);
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.banner > img {
+    max-height: 100%;
+    width: 200px;
+}
+
+.banner > p {
+    z-index: 1;
+    position: absolute;
 }
