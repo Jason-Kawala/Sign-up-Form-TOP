@@ -1,5 +1,11 @@
+@font-face {
+    font-family: "norse-bold";
+    src: url("./fonts/Norse-Bold.otf");
+}
+
 :root {
     --left-txt-color: white;
+    --cool-font: norse-bold, Arial, Helvetica, sans-serif;
 }
 * {
     box-sizing: border-box;
@@ -33,6 +39,7 @@ body,html {
     margin: 10px;
     color: var(--left-txt-color);
     opacity: 50%;
+    font-family: var(--cool-font);
 }
 
 .banner, .left-card > p {
@@ -44,20 +51,20 @@ body,html {
     position: absolute;
     top: 30%;
     z-index: 1;
-    font-size: 4em;
+    font-size: 6em;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.466);
     align-items: center;
     justify-content: center;
     color: var(--left-txt-color);
+    font-family: var(--cool-font);
 }
 
 .banner > img {
-    max-height: 100%;
-    width: 200px;
+    width: 150px;
 }
 
 a {
-    color: var(--left-txt-color)
+    color: var(--left-txt-color);
 }
 
