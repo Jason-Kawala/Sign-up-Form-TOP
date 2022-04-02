@@ -1,3 +1,6 @@
+:root {
+    --left-txt-color: white;
+}
 * {
     box-sizing: border-box;
 }
@@ -10,7 +13,7 @@ body,html {
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template: "a b" 100%;
+    grid-template: "a b" 100%; 
 }
 
 .left-card {
@@ -24,6 +27,14 @@ body,html {
     max-height: 100%;
 }
 
+.left-card > p {
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+    color: var(--left-txt-color);
+    opacity: 50%;
+}
+
 .banner, .left-card > p {
     text-align: center;
 }
@@ -35,10 +46,10 @@ body,html {
     z-index: 1;
     font-size: 4em;
     width: 100%;
-    background-color: rgba(55, 85, 99, 0.15);
+    background-color: rgba(0, 0, 0, 0.466);
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--left-txt-color);
 }
 
 .banner > img {
@@ -46,7 +57,7 @@ body,html {
     width: 200px;
 }
 
-.banner > p {
-    z-index: 1;
-    position: absolute;
+a {
+    color: var(--left-txt-color)
 }
+
